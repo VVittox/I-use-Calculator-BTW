@@ -1,14 +1,14 @@
 # I-use-Calculator-BTW
 команда называется "I use Arch BTW"
 Team Leaders:
--VVittox
+-@VVittox
 -Seva | 
 Devs:
--Offigenski69 
+-@Offigenski69 
 -qustareun 
 -Kmdkam 
--Genanasporte
--VVittox
+-@Genanasporte
+-@VVittox
 -Seva
 -Ludfulin Dmitriy
 -naumov anatoliy
