@@ -10,5 +10,5 @@ Devs:
 -Genanasporte
 -VVittox
 -Seva
--ludfulin Dmitriy
+-Ludfulin Dmitriy
 -naumov anatoliy
