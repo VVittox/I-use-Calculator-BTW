@@ -17,6 +17,8 @@ def calc_simple():
             print("Делить на 0 нельзя великий математик.")
         else:
             print(n1 / n2)
+    else:
+        print("Неверная операция")
 
 
 def calc_extended():
@@ -39,7 +41,12 @@ def calc_extended():
             print(n1 % n2)
     elif choice == 3:
         n1 = int(input("Введите число: "))
-        print(math.sqrt(n1))
+        if n1 < 0:
+            print("Подкоренное выражение не должно быть меньше 0, великий математик.")
+        else:
+            print(math.sqrt(n1))
+    else:
+        print("Неверная операция")
 
 
 def calc_degrees():
@@ -165,6 +172,8 @@ def menu_numbers():
         menu_logic()
     elif choice == 7:
         check_brackets()
+    else:
+        print("Неверный выбор")
 
 
 def str_simple():
@@ -241,6 +250,8 @@ def menu_strings():
         str_words()
     elif choice == 4:
         str_stat()
+    else:
+        print("Неверный выбор")
 
 
 def long_add():
@@ -388,6 +399,9 @@ def menu_long():
         long_sub()
     elif choice == 3:
         long_multiply()
+    else:
+        print("Неверный выбор")
+    
 
 
 def menu():
@@ -403,12 +417,16 @@ def menu():
         menu_strings()
     elif choice == 3:
         menu_long()
-
+    else:
+        print("Неверный выбор")
 
 def main():
     print("Добро пожаловать в *I Use Calculator BTW* от команды I use Arch BTW!")
-    menu()
-
+    while True:
+        try:
+            menu()
+        except ValueError:
+            print("Ошибка ввода")
 
 if __name__ == "__main__":
     main()
