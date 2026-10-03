@@ -14,7 +14,7 @@ def calc_simple():
         print(n1 * n2)
     elif operation == "/":
         if n2 == 0:
-            print("Делить на 0 нельзя великий математик.")
+            print("Делить на 0 нельзя.")
         else:
             print(n1 / n2)
     else:
@@ -36,7 +36,7 @@ def calc_extended():
         n1 = int(input("Введите число 1: "))
         n2 = int(input("Введите число 2: "))
         if n2 == 0:
-            print("Делить на 0 нельзя математик.")
+            print("Делить на 0 нельзя.")
         else:
             print(n1 % n2)
     elif choice == 3:
